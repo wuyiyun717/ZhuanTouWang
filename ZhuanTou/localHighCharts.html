@@ -1,0 +1,222 @@
+<html>  
+<head>  
+  <meta charset="UTF-8" />  
+  <title>Hello World</title>  
+  <meta name="Description" content="" />  
+  <meta name="Keywords" content="" />  
+  <script type="text/javascript" src="jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="highcharts.js"></script>
+   
+  <script type="text/javascript">
+	//window.ProductDetailActivity.getProductCode();
+	function draw(string) {
+			var orange = 'rgb(251, 110, 14)';
+			var grey = 'rgb(200, 200, 200)';
+			var background = '#eeeeee';
+			var str = string;
+			//var str='{"relatedRecordId":"0ae618a0-538f-4435-b156-202bc7f0afaa","relatedRecordType":"稳健型投顾产品","relatedRecordName":"双子座1.0","relatedRecordCode":"201506091224791","name":"双子座","prior":200000.000000,"inferior":50000.000000,"initial":250000.000000,"netValue":1.047278,"pl":11819.560000,"plStd":0.040147,"plStdRank":0.641025,"numOfDaysProfit":4,"numOfDaysLoss":3,"tradingHaltedPct":0.000000,"numOfDaysEven":0,"maxRetracement":-0.064128,"numOfTradesProfit":14,"numOfTradesLoss":7,"numOfTradesEven":0,"numOfClosedTrades":21,"winRate":0.666666,"numOfStockOwning":2,"positionPct":0.404133,"marketValue":105810.000000,"netValueRank":0.410256,"maxRetracementRank":0.743589,"winRateRank":0.538461,"sharpPctRank":0.487179,"plDist":"0,0,1,0,2,2,0,2,0,0,","commision":94.353500,"anualizedReturn":1.634476,"sharpPct":1.177599,"yestPlPct":-0.054420,"monthPlPct":0.047278,"traderName":"dzh123","industryPctList":[{"industry":"机械设备","pct":0.578395,"id":"f89c643d-6b48-495d-b26d-421c37cf26e2","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANN2U=","isDeleted":false},{"industry":"交运设备","pct":0.421604,"id":"6f1acf23-eeb1-4cf1-a3d9-e63d3a746787","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANN2Q=","isDeleted":false}],"netValueList":[{"date":"6_10","value":1.006400,"year":"2015","value2":250000.000000,"dateTime":"2015-06-10 00:00:00","id":"2cdcf22d-c0a1-4248-bac4-4237fee4c843","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyM=","isDeleted":false},{"date":"6_12","value":1.102996,"year":"2015","value2":250000.000000,"dateTime":"2015-06-12 00:00:00","id":"5f843b9e-78ff-4951-ac29-4e27490ae213","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyo=","isDeleted":false},{"date":"6_16","value":1.112112,"year":"2015","value2":250000.000000,"dateTime":"2015-06-16 00:00:00","id":"442bb780-c514-4ca1-bec1-935341a3e3b2","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyc=","isDeleted":false},{"date":"6_15","value":1.119040,"year":"2015","value2":250000.000000,"dateTime":"2015-06-15 00:00:00","id":"e95bff7d-cd7f-48f0-9ed7-a116b785d50c","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzs=","isDeleted":false},{"date":"6_17","value":1.107552,"year":"2015","value2":250000.000000,"dateTime":"2015-06-17 00:00:00","id":"6544cc79-982b-4624-b032-b82197f94190","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyw=","isDeleted":false},{"date":"6_18","value":1.047278,"year":"2015","value2":250000.000000,"dateTime":"2015-06-18 00:00:00","id":"6e2556c4-e3ef-4270-950a-d0f7b6412865","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNy4=","isDeleted":false},{"date":"6_11","value":1.048552,"year":"2015","value2":250000.000000,"dateTime":"2015-06-11 00:00:00","id":"32f6dce1-0a51-4462-81c7-dd24a3c01de5","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyU=","isDeleted":false}],"retracementList":[{"date":"6_11","value":0.000000,"year":"2015","value2":0.000000,"dateTime":"2015-06-11 00:00:00","id":"f8ddbe7d-a9ac-430f-afc4-064774e5d53e","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNz4=","isDeleted":false},{"date":"6_16","value":-0.006191,"year":"2015","value2":0.000000,"dateTime":"2015-06-16 00:00:00","id":"f14b64ca-fecf-4321-9f69-3211ec95f5f9","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzw=","isDeleted":false},{"date":"6_10","value":0.000000,"year":"2015","value2":0.000000,"dateTime":"2015-06-10 00:00:00","id":"807abce6-be0f-4da3-8979-5a3648e1b607","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNy8=","isDeleted":false},{"date":"6_17","value":-0.010266,"year":"2015","value2":0.000000,"dateTime":"2015-06-17 00:00:00","id":"0e0d1a76-2fcd-402f-bcba-81a0d2249a32","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNx8=","isDeleted":false},{"date":"6_18","value":-0.064128,"year":"2015","value2":0.000000,"dateTime":"2015-06-18 00:00:00","id":"4e09f495-1b58-4bc4-bdfa-8fc10287435a","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyk=","isDeleted":false},{"date":"6_15","value":0.000000,"year":"2015","value2":0.000000,"dateTime":"2015-06-15 00:00:00","id":"ad70422d-39f4-4d94-aa8d-aab9c06b6108","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzQ=","isDeleted":false},{"date":"6_12","value":0.000000,"year":"2015","value2":0.000000,"dateTime":"2015-06-12 00:00:00","id":"c18ab005-ccb1-414c-92e1-f4341b25eade","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzc=","isDeleted":false}],"indList":[{"date":"6_12","value":1.003321,"year":"2015","value2":0.000000,"dateTime":"2015-06-12 00:00:00","id":"c7645d85-4483-4123-b899-605c1a6580ec","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzg=","isDeleted":false},{"date":"6_15","value":0.981891,"year":"2015","value2":0.000000,"dateTime":"2015-06-15 00:00:00","id":"6a6a78d6-bb84-49d9-923c-736b09e757c3","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNy0=","isDeleted":false},{"date":"6_18","value":0.927237,"year":"2015","value2":0.000000,"dateTime":"2015-06-18 00:00:00","id":"849d36e9-761e-43a9-bb14-858dfe9b90d4","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzA=","isDeleted":false},{"date":"6_17","value":0.966406,"year":"2015","value2":0.000000,"dateTime":"2015-06-17 00:00:00","id":"aed08d11-5df9-41c2-9dd8-9b7fe0ccc2a6","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzU=","isDeleted":false},{"date":"6_11","value":0.997955,"year":"2015","value2":0.000000,"dateTime":"2015-06-11 00:00:00","id":"0cb20c5d-3a83-4339-8545-aa9df41af296","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNx4=","isDeleted":false},{"date":"6_10","value":0.998429,"year":"2015","value2":0.000000,"dateTime":"2015-06-10 00:00:00","id":"16e83596-0dc3-41ef-8b57-acca6c43169c","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyA=","isDeleted":false},{"date":"6_16","value":0.952488,"year":"2015","value2":0.000000,"dateTime":"2015-06-16 00:00:00","id":"3caae407-a177-49c8-922a-fe33726a170e","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyY=","isDeleted":false}],"plPctList":[{"date":"6_12","value":0.102996,"year":"2015","value2":0.000000,"dateTime":"2015-06-12 00:00:00","id":"aff364d9-b2e0-408c-a45c-b1e93bc70486","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzY=","isDeleted":false},{"date":"6_15","value":0.119040,"year":"2015","value2":0.000000,"dateTime":"2015-06-15 00:00:00","id":"db71a2a8-6352-42b8-bfea-b838f6b42408","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzo=","isDeleted":false},{"date":"6_10","value":0.006400,"year":"2015","value2":0.000000,"dateTime":"2015-06-10 00:00:00","id":"9759fa45-8ef8-4dfb-bce9-d352ef2dece1","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzE=","isDeleted":false},{"date":"6_18","value":0.047278,"year":"2015","value2":0.000000,"dateTime":"2015-06-18 00:00:00","id":"ab5a4a8b-5053-4be5-b723-d7ee32db4ca2","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzM=","isDeleted":false},{"date":"6_17","value":0.107552,"year":"2015","value2":0.000000,"dateTime":"2015-06-17 00:00:00","id":"1d7b1f48-e237-4e85-8373-e32dfbfaa9fc","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyE=","isDeleted":false},{"date":"6_16","value":0.112112,"year":"2015","value2":0.000000,"dateTime":"2015-06-16 00:00:00","id":"f176d2c1-9fdc-4191-a96c-e779edc6c503","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNz0=","isDeleted":false},{"date":"6_11","value":0.048552,"year":"2015","value2":0.000000,"dateTime":"2015-06-11 00:00:00","id":"cda28e26-9ced-4591-b436-f4ba28a1e943","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzk=","isDeleted":false}],"datedDealList":[],"datedPositionList":[],"platePctList":[{"plateName":"创业板","pct":0.578395,"id":"5c696cdc-9c07-4766-9d77-211331d4abab","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANN2c=","isDeleted":false},{"plateName":"中小板","pct":0.000000,"id":"571cda0f-8148-4425-9a64-27ecdddcbffa","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANN2Y=","isDeleted":false},{"plateName":"主板","pct":0.421604,"id":"6c4dee46-6f4f-4c99-bc3f-adcb2527d17d","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANN2g=","isDeleted":false}],"plDaily":[{"date":"6_17","value":-0.004100,"year":"2015","value2":0.000000,"dateTime":"2015-06-17 00:00:00","id":"076fc97b-076d-4d58-8b41-0045179dd87f","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNx0=","isDeleted":false},{"date":"6_16","value":-0.006191,"year":"2015","value2":0.000000,"dateTime":"2015-06-16 00:00:00","id":"04b50b42-3e1d-4c27-b677-00e0b3b3eeed","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNxw=","isDeleted":false},{"date":"6_11","value":0.041884,"year":"2015","value2":0.000000,"dateTime":"2015-06-11 00:00:00","id":"1ef61ed2-ef0e-4878-beb8-1f9a91fdef18","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyI=","isDeleted":false},{"date":"6_15","value":0.014545,"year":"2015","value2":0.000000,"dateTime":"2015-06-15 00:00:00","id":"483ae994-06e0-4eec-9d99-5ae0ae941f93","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyg=","isDeleted":false},{"date":"6_10","value":0.006400,"year":"2015","value2":0.000000,"dateTime":"2015-06-10 00:00:00","id":"2d2f5e86-85c8-4840-8622-9706d6f7e476","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyQ=","isDeleted":false},{"date":"6_18","value":-0.054420,"year":"2015","value2":0.000000,"dateTime":"2015-06-18 00:00:00","id":"5f93b65e-770f-4efe-9d93-c8a16e0c8a1f","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNys=","isDeleted":false},{"date":"6_12","value":0.051923,"year":"2015","value2":0.000000,"dateTime":"2015-06-12 00:00:00","id":"9ac5a790-e7a6-405b-8eaa-f9e927e08490","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzI=","isDeleted":false}],"active":false,"qualified":null}';
+			 var res=jQuery.parseJSON(str);
+				var tradingDetail = res;
+				var sortByDate = function (a, b) {
+					var aMonth = parseInt(a.date.substring(0, a.date.indexOf('_')));
+					var aDay = parseInt(a.date.substring(a.date.indexOf('_') + 1));
+					var bMonth = parseInt(b.date.substring(0, b.date.indexOf('_')));
+					var bDay = parseInt(b.date.substring(b.date.indexOf('_') + 1));
+					var aYear = parseInt(a.year);
+					var bYear = parseInt(b.year);
+					if (aYear < bYear) {
+						return -1;
+					} else if (aYear > bYear) {
+						return 1;
+					} else {
+						if (aMonth < bMonth) {
+							return -1;
+						} else if (aMonth > bMonth) {
+							return 1;
+						} else {
+							if (aDay < bDay) {
+								return -1;
+							} else if (aDay > bDay) {
+								return 1;
+							}
+						}
+					}
+				};
+				var dateList = [];
+				var netValueList = [];
+				var indList = [];
+				var sortedNetValueList = tradingDetail.netValueList.sort(sortByDate);
+				netValueList.push(1);
+				dateList.push('初始');
+				sortedNetValueList.forEach(function (netValue) {
+					var month = parseInt(netValue.date.substring(0, netValue.date.indexOf('_')));
+					var day = parseInt(netValue.date.substring(netValue.date.indexOf('_') + 1));
+					dateList.push(netValue.year.substring(2) + '/' + month + '/' + day);
+					netValueList.push(netValue.value);
+				});
+				var sortedIndList = tradingDetail.indList.sort(sortByDate);
+				indList.push(1);
+				sortedIndList.forEach(function (ind) {
+					indList.push(ind.value);
+				});
+				$(function () {
+					$('#container1').highcharts({
+					chart: {
+						height: 300,
+						//backgroundColor: background
+					},
+					title: {
+						text: '净值走势',
+					},
+					xAxis: {
+						categories: dateList,
+						type: 'datetime',
+					},
+					yAxis: {
+						title: {
+							text: ''
+						},
+						plotLines: [
+							{
+								value: 0,
+								width: 1,
+								color: '#808080'
+							}
+						]
+					},
+					tooltip: {
+						valueDecimals: 3
+					},
+					credits: false,
+					series: [
+						{
+							name: '我的净值',
+							marker: {
+								enabled: false
+							},
+							color: orange,
+							data: netValueList
+						}, {
+							name: '沪深300指数',
+							marker: {
+								enabled: false
+							},
+							color: grey,
+							data: indList
+						}
+					]
+				});
+				}); 
+			/*$.get('http://zhuantouwang.com/api/tradingdetail/byCode4M/' + prodCode).done(function (res) {
+				if (res == null) {
+					self.title('暂无登记业绩');
+					return;
+				}
+				var tradingDetail = res;
+				self.title(res.name);
+				self.pl(res.netValue - 1);
+				self.plPct((self.pl() * 100).toFixed(2));
+				self.traderName(res.traderName);
+				var sortByDate = function (a, b) {
+					var aMonth = parseInt(a.date.substring(0, a.date.indexOf('_')));
+					var aDay = parseInt(a.date.substring(a.date.indexOf('_') + 1));
+					var bMonth = parseInt(b.date.substring(0, b.date.indexOf('_')));
+					var bDay = parseInt(b.date.substring(b.date.indexOf('_') + 1));
+					var aYear = parseInt(a.year);
+					var bYear = parseInt(b.year);
+					if (aYear < bYear) {
+						return -1;
+					} else if (aYear > bYear) {
+						return 1;
+					} else {
+						if (aMonth < bMonth) {
+							return -1;
+						} else if (aMonth > bMonth) {
+							return 1;
+						} else {
+							if (aDay < bDay) {
+								return -1;
+							} else if (aDay > bDay) {
+								return 1;
+							}
+						}
+					}
+				};
+				var dateList = [];
+				var netValueList = [];
+				var indList = [];
+				var sortedNetValueList = tradingDetail.netValueList.sort(sortByDate);
+				netValueList.push(1);
+				dateList.push('初始');
+				sortedNetValueList.forEach(function (netValue) {
+					var month = parseInt(netValue.date.substring(0, netValue.date.indexOf('_')));
+					var day = parseInt(netValue.date.substring(netValue.date.indexOf('_') + 1));
+					dateList.push(netValue.year.substring(2) + '/' + month + '/' + day);
+					netValueList.push(netValue.value);
+				});
+				var sortedIndList = tradingDetail.indList.sort(sortByDate);
+				indList.push(1);
+				sortedIndList.forEach(function (ind) {
+					indList.push(ind.value);
+				});
+				self.ind(sortedIndList[sortedIndList.length-1].value - 1);
+				self.indPct((self.ind() * 100).toFixed(2));
+				$('#container1').highcharts({
+					chart: {
+						height: 300,
+						//backgroundColor: background
+					},
+					title: {
+						text: '净值走势',
+					},
+					xAxis: {
+						categories: dateList,
+						type: 'datetime',
+					},
+					yAxis: {
+						title: {
+							text: ''
+						},
+						plotLines: [
+							{
+								value: 0,
+								width: 1,
+								color: '#808080'
+							}
+						]
+					},
+					tooltip: {
+						valueDecimals: 3
+					},
+					credits: false,
+					series: [
+						{
+							name: '我的净值',
+							marker: {
+								enabled: false
+							},
+							color: orange,
+							data: netValueList
+						}, {
+							name: '沪深300指数',
+							marker: {
+								enabled: false
+							},
+							color: grey,
+							data: indList
+						}
+					]
+				});
+			});*/
+		};
+    /* var str='{"relatedRecordId":"0ae618a0-538f-4435-b156-202bc7f0afaa","relatedRecordType":"稳健型投顾产品","relatedRecordName":"双子座1.0","relatedRecordCode":"201506091224791","name":"双子座","prior":200000.000000,"inferior":50000.000000,"initial":250000.000000,"netValue":1.047278,"pl":11819.560000,"plStd":0.040147,"plStdRank":0.641025,"numOfDaysProfit":4,"numOfDaysLoss":3,"tradingHaltedPct":0.000000,"numOfDaysEven":0,"maxRetracement":-0.064128,"numOfTradesProfit":14,"numOfTradesLoss":7,"numOfTradesEven":0,"numOfClosedTrades":21,"winRate":0.666666,"numOfStockOwning":2,"positionPct":0.404133,"marketValue":105810.000000,"netValueRank":0.410256,"maxRetracementRank":0.743589,"winRateRank":0.538461,"sharpPctRank":0.487179,"plDist":"0,0,1,0,2,2,0,2,0,0,","commision":94.353500,"anualizedReturn":1.634476,"sharpPct":1.177599,"yestPlPct":-0.054420,"monthPlPct":0.047278,"traderName":"dzh123","industryPctList":[{"industry":"机械设备","pct":0.578395,"id":"f89c643d-6b48-495d-b26d-421c37cf26e2","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANN2U=","isDeleted":false},{"industry":"交运设备","pct":0.421604,"id":"6f1acf23-eeb1-4cf1-a3d9-e63d3a746787","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANN2Q=","isDeleted":false}],"netValueList":[{"date":"6_10","value":1.006400,"year":"2015","value2":250000.000000,"dateTime":"2015-06-10 00:00:00","id":"2cdcf22d-c0a1-4248-bac4-4237fee4c843","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyM=","isDeleted":false},{"date":"6_12","value":1.102996,"year":"2015","value2":250000.000000,"dateTime":"2015-06-12 00:00:00","id":"5f843b9e-78ff-4951-ac29-4e27490ae213","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyo=","isDeleted":false},{"date":"6_16","value":1.112112,"year":"2015","value2":250000.000000,"dateTime":"2015-06-16 00:00:00","id":"442bb780-c514-4ca1-bec1-935341a3e3b2","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyc=","isDeleted":false},{"date":"6_15","value":1.119040,"year":"2015","value2":250000.000000,"dateTime":"2015-06-15 00:00:00","id":"e95bff7d-cd7f-48f0-9ed7-a116b785d50c","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzs=","isDeleted":false},{"date":"6_17","value":1.107552,"year":"2015","value2":250000.000000,"dateTime":"2015-06-17 00:00:00","id":"6544cc79-982b-4624-b032-b82197f94190","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyw=","isDeleted":false},{"date":"6_18","value":1.047278,"year":"2015","value2":250000.000000,"dateTime":"2015-06-18 00:00:00","id":"6e2556c4-e3ef-4270-950a-d0f7b6412865","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNy4=","isDeleted":false},{"date":"6_11","value":1.048552,"year":"2015","value2":250000.000000,"dateTime":"2015-06-11 00:00:00","id":"32f6dce1-0a51-4462-81c7-dd24a3c01de5","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyU=","isDeleted":false}],"retracementList":[{"date":"6_11","value":0.000000,"year":"2015","value2":0.000000,"dateTime":"2015-06-11 00:00:00","id":"f8ddbe7d-a9ac-430f-afc4-064774e5d53e","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNz4=","isDeleted":false},{"date":"6_16","value":-0.006191,"year":"2015","value2":0.000000,"dateTime":"2015-06-16 00:00:00","id":"f14b64ca-fecf-4321-9f69-3211ec95f5f9","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzw=","isDeleted":false},{"date":"6_10","value":0.000000,"year":"2015","value2":0.000000,"dateTime":"2015-06-10 00:00:00","id":"807abce6-be0f-4da3-8979-5a3648e1b607","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNy8=","isDeleted":false},{"date":"6_17","value":-0.010266,"year":"2015","value2":0.000000,"dateTime":"2015-06-17 00:00:00","id":"0e0d1a76-2fcd-402f-bcba-81a0d2249a32","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNx8=","isDeleted":false},{"date":"6_18","value":-0.064128,"year":"2015","value2":0.000000,"dateTime":"2015-06-18 00:00:00","id":"4e09f495-1b58-4bc4-bdfa-8fc10287435a","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyk=","isDeleted":false},{"date":"6_15","value":0.000000,"year":"2015","value2":0.000000,"dateTime":"2015-06-15 00:00:00","id":"ad70422d-39f4-4d94-aa8d-aab9c06b6108","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzQ=","isDeleted":false},{"date":"6_12","value":0.000000,"year":"2015","value2":0.000000,"dateTime":"2015-06-12 00:00:00","id":"c18ab005-ccb1-414c-92e1-f4341b25eade","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzc=","isDeleted":false}],"indList":[{"date":"6_12","value":1.003321,"year":"2015","value2":0.000000,"dateTime":"2015-06-12 00:00:00","id":"c7645d85-4483-4123-b899-605c1a6580ec","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzg=","isDeleted":false},{"date":"6_15","value":0.981891,"year":"2015","value2":0.000000,"dateTime":"2015-06-15 00:00:00","id":"6a6a78d6-bb84-49d9-923c-736b09e757c3","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNy0=","isDeleted":false},{"date":"6_18","value":0.927237,"year":"2015","value2":0.000000,"dateTime":"2015-06-18 00:00:00","id":"849d36e9-761e-43a9-bb14-858dfe9b90d4","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzA=","isDeleted":false},{"date":"6_17","value":0.966406,"year":"2015","value2":0.000000,"dateTime":"2015-06-17 00:00:00","id":"aed08d11-5df9-41c2-9dd8-9b7fe0ccc2a6","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzU=","isDeleted":false},{"date":"6_11","value":0.997955,"year":"2015","value2":0.000000,"dateTime":"2015-06-11 00:00:00","id":"0cb20c5d-3a83-4339-8545-aa9df41af296","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNx4=","isDeleted":false},{"date":"6_10","value":0.998429,"year":"2015","value2":0.000000,"dateTime":"2015-06-10 00:00:00","id":"16e83596-0dc3-41ef-8b57-acca6c43169c","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyA=","isDeleted":false},{"date":"6_16","value":0.952488,"year":"2015","value2":0.000000,"dateTime":"2015-06-16 00:00:00","id":"3caae407-a177-49c8-922a-fe33726a170e","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyY=","isDeleted":false}],"plPctList":[{"date":"6_12","value":0.102996,"year":"2015","value2":0.000000,"dateTime":"2015-06-12 00:00:00","id":"aff364d9-b2e0-408c-a45c-b1e93bc70486","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzY=","isDeleted":false},{"date":"6_15","value":0.119040,"year":"2015","value2":0.000000,"dateTime":"2015-06-15 00:00:00","id":"db71a2a8-6352-42b8-bfea-b838f6b42408","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzo=","isDeleted":false},{"date":"6_10","value":0.006400,"year":"2015","value2":0.000000,"dateTime":"2015-06-10 00:00:00","id":"9759fa45-8ef8-4dfb-bce9-d352ef2dece1","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzE=","isDeleted":false},{"date":"6_18","value":0.047278,"year":"2015","value2":0.000000,"dateTime":"2015-06-18 00:00:00","id":"ab5a4a8b-5053-4be5-b723-d7ee32db4ca2","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzM=","isDeleted":false},{"date":"6_17","value":0.107552,"year":"2015","value2":0.000000,"dateTime":"2015-06-17 00:00:00","id":"1d7b1f48-e237-4e85-8373-e32dfbfaa9fc","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyE=","isDeleted":false},{"date":"6_16","value":0.112112,"year":"2015","value2":0.000000,"dateTime":"2015-06-16 00:00:00","id":"f176d2c1-9fdc-4191-a96c-e779edc6c503","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNz0=","isDeleted":false},{"date":"6_11","value":0.048552,"year":"2015","value2":0.000000,"dateTime":"2015-06-11 00:00:00","id":"cda28e26-9ced-4591-b436-f4ba28a1e943","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzk=","isDeleted":false}],"datedDealList":[],"datedPositionList":[],"platePctList":[{"plateName":"创业板","pct":0.578395,"id":"5c696cdc-9c07-4766-9d77-211331d4abab","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANN2c=","isDeleted":false},{"plateName":"中小板","pct":0.000000,"id":"571cda0f-8148-4425-9a64-27ecdddcbffa","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANN2Y=","isDeleted":false},{"plateName":"主板","pct":0.421604,"id":"6c4dee46-6f4f-4c99-bc3f-adcb2527d17d","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANN2g=","isDeleted":false}],"plDaily":[{"date":"6_17","value":-0.004100,"year":"2015","value2":0.000000,"dateTime":"2015-06-17 00:00:00","id":"076fc97b-076d-4d58-8b41-0045179dd87f","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNx0=","isDeleted":false},{"date":"6_16","value":-0.006191,"year":"2015","value2":0.000000,"dateTime":"2015-06-16 00:00:00","id":"04b50b42-3e1d-4c27-b677-00e0b3b3eeed","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNxw=","isDeleted":false},{"date":"6_11","value":0.041884,"year":"2015","value2":0.000000,"dateTime":"2015-06-11 00:00:00","id":"1ef61ed2-ef0e-4878-beb8-1f9a91fdef18","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyI=","isDeleted":false},{"date":"6_15","value":0.014545,"year":"2015","value2":0.000000,"dateTime":"2015-06-15 00:00:00","id":"483ae994-06e0-4eec-9d99-5ae0ae941f93","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyg=","isDeleted":false},{"date":"6_10","value":0.006400,"year":"2015","value2":0.000000,"dateTime":"2015-06-10 00:00:00","id":"2d2f5e86-85c8-4840-8622-9706d6f7e476","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNyQ=","isDeleted":false},{"date":"6_18","value":-0.054420,"year":"2015","value2":0.000000,"dateTime":"2015-06-18 00:00:00","id":"5f93b65e-770f-4efe-9d93-c8a16e0c8a1f","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNys=","isDeleted":false},{"date":"6_12","value":0.051923,"year":"2015","value2":0.000000,"dateTime":"2015-06-12 00:00:00","id":"9ac5a790-e7a6-405b-8eaa-f9e927e08490","createdOn":"2015-06-18 23:02:17","createdBy":null,"modifiedOn":null,"modifiedBy":null,"rowVersion":"AAAAAAANNzI=","isDeleted":false}],"active":false,"qualified":null}';
+    paintNetVal(str); */
+		//loadData();
+  </script>  
+</head>  
+  
+<body>  
+  <!-- This file lives in public/422.html -->   
+  <div id='container1'></div> 
+</body>  
+</html>

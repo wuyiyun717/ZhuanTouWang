@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RealnameVerify</key>
+	<false/>
+	<key>AlipayAccount</key>
+	<string></string>
+	<key>RechargeAmount</key>
+	<string></string>
+	<key>Login</key>
+	<false/>
+	<key>ProductStyle</key>
+	<string></string>
+	<key>gestureOn</key>
+	<false/>
+	<key>vCode</key>
+	<string></string>
+	<key>Phone</key>
+	<string></string>
+	<key>WithoutAPI</key>
+	<string>http://test.pujintianxia.com</string>
+	<key>API</key>
+	<string>http://test.pujintianxia.com/api</string>
+	<key>ProductCode</key>
+	<string></string>
+	<key>FirstLogin</key>
+	<true/>
+	<key>Password</key>
+	<string></string>
+	<key>Username</key>
+	<string>123</string>
+</dict>
+</plist>
